@@ -1,0 +1,40 @@
+.habit-details {
+    margin-bottom: 10px;
+}
+
+.habit-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+  
+.habit-description {
+  font-size: 14px;
+  color: #777; 
+}
+
+.seven-days-of-week table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.seven-days-of-week th, .seven-days-of-week td {
+  border: 1px solid #ccc;
+  text-align: center;
+  padding: 8px;
+}
+
+.seven-days-of-week th {
+  background-color: #f0f0f0; 
+}
+
+.td-status{
+  cursor: pointer;
+}
+
+#unchecked {
+  color: #f00; /* Red color for fail status */
+}
+
+#checked {
+  color: #4caf50; /* Green color for done status */
+}
