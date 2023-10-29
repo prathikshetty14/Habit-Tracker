@@ -59,7 +59,7 @@ function HabitContainer() {
       <div className="habits-bar-container">
 
         {/* Section for adding a new habit */}
-        <section className="habit-adding">
+        <form className="habit-adding">
 
           {/* Input field for habit name */}
           <div className="input-bar">
@@ -92,7 +92,7 @@ function HabitContainer() {
           <button className="button-57" onClick={addYourHabitOnClick}>
             <span className="text">Add Task</span><span class="material-symbols-outlined">add_task</span>
           </button>
-        </section>
+        </form>
 
         {/* Map through 'data' (list of habits) and render each habit using HabitsList component */}
         {data.map((habit) => (

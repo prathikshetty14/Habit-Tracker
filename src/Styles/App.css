@@ -2,23 +2,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body {
-  background-color: #f5f5f5; 
+  background-color: #f5f5f5;
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
 }
 
-.title-logo h1{
-  font-family: 'Playpen Sans', cursive;
-  color: black;
-  position: absolute;
-  top: 1px;
-  left: 42%;
+.title-logo {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  position: fixed; 
+  width: 100%;
+  z-index: 1; /* Ensure it's above the content */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 }
 
-.title-logo img{
-  position: absolute;
+.title-logo h1 {
+  font-family: 'Playpen Sans', cursive;
+  color: black;
+  margin: 0;
+  padding: 10px;
+}
+
+.title-logo img {
   height: 50px;
-  top: 15px;
-  left: 38%;
+  margin: 0 10px;
+}
+
+.content-container {
+  margin-top: 70px; /* Adjust the margin to match your header height */
 }

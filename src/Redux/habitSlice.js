@@ -2,12 +2,12 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 // Get the habit array from local storage or initialize it as an empty array
-const habitsArr = JSON.parse(localStorage.getItem("habits")) || [];
+const habitsArray = JSON.parse(localStorage.getItem("habits")) || [];
 
 
 // Define initial state with habits
 const initialState = {
-  habits: habitsArr,
+  habits: habitsArray,
 };
 
 
