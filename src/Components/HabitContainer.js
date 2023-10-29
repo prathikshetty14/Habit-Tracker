@@ -16,6 +16,7 @@ function HabitContainer() {
   // Get the 'habits' data from the Redux store using 'useSelector'
   const data = useSelector((state) => state.habit.habits)
 
+
   // Function to format a date as 'dd/mm/yy'
   const formatDate = (date) => {
     const dd = date.getDate().toString().padStart(2, "0");
@@ -23,6 +24,7 @@ function HabitContainer() {
     const yy = date.getFullYear().toString().substring(2);
     return `${dd}/${mm}/${yy}`;
   };
+
 
   // Function to get the dates for the last 7 days
   const getLast7Days = () => {
@@ -36,6 +38,7 @@ function HabitContainer() {
       });
     return last7Days;
   };
+
 
   // Function to add a new habit when the "Add Task" button is clicked
   const addYourHabitOnClick = () => {
@@ -53,13 +56,14 @@ function HabitContainer() {
     dispatch(addHabit(habitToBeAdded));
   };
 
+
   // Return the JSX structure of the HabitContainer component
   return (
     <div className="main-container">
       <div className="habits-bar-container">
 
         {/* Section for adding a new habit */}
-        <form className="habit-adding">
+        <section className="habit-adding">
 
           {/* Input field for habit name */}
           <div className="input-bar">
@@ -92,7 +96,8 @@ function HabitContainer() {
           <button className="button-57" onClick={addYourHabitOnClick}>
             <span className="text">Add Task</span><span class="material-symbols-outlined">add_task</span>
           </button>
-        </form>
+        </section>
+
 
         {/* Map through 'data' (list of habits) and render each habit using HabitsList component */}
         {data.map((habit) => (

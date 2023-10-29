@@ -1,3 +1,4 @@
+
 .habit-details {
     margin-bottom: 10px;
 }
@@ -32,9 +33,9 @@
 }
 
 #unchecked {
-  color: #f00; /* Red color for fail status */
+  color: #f00; 
 }
 
 #checked {
-  color: #4caf50; /* Green color for done status */
+  color: #4caf50;
 }
